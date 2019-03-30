@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.musicplayer"
+    android:installLocation="internalOnly"
+    >
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_play"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_play"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.musicplayer.activities.MusicActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.musicplayer.activities.PlaylistActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <service
+            android:name="com.musicplayer.service.MusicController"
+            android:enabled="true"
+            android:exported="false"
+            >
+        </service>
+
+        <receiver android:name="com.musicplayer.widget.WidgetAppProviderSmall" android:label="@string/widget_small">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.musicplayer.metachanged" />
+                <action android:name="com.musicplayer.playstatechanged" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_small"/>
+        </receiver>
+
+        <receiver android:name="com.musicplayer.widget.WidgetAppProvider" android:label="@string/widget_standard">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.musicplayer.metachanged" />
+                <action android:name="com.musicplayer.playstatechanged" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_standard"/>
+        </receiver>
+
+        <receiver android:name="com.musicplayer.widget.WidgetAppProviderBig" android:label="@string/widget_big">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.musicplayer.metachanged" />
+                <action android:name="com.musicplayer.playstatechanged" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_big"/>
+        </receiver>
+																																														 
+    </application>
+</manifest>

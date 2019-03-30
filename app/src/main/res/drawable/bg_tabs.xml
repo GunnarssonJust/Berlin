@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected, use this gradient-->
+    <item android:drawable="@drawable/gradient_tabs_selected"
+        android:state_selected="true"/>
+    <!-- When not selected, use dark rebg-->
+    <item android:drawable="@drawable/gradient_tabs"
+        android:state_selected="false"/>
+</selector>

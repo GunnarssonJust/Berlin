@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="preview">Preview</string>
+    <string name="rewind">Rewind</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="forward">Forward</string>
+    <string name="next">Next</string>
+    <string name="song_name">Song name</string>
+    <string name="songImage">Album Image</string>
+    <string name="playlist">Playlists</string>
+    <string name="end">end</string>
+    <string name="start">start</string>
+    <string name="alles_klar">alles klar</string>
+    <string name="albumart">Album Art</string>
+    <string name="repeat">Repeat</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="rio_reiser" translatable="false">Rio Reiser</string>
+    <string name="rauch_haus_song" translatable="false">Rauch-Haus-Song</string>
+    <string name="schliessen">Schlie&#223;en</string>
+    <string name="subitem1">subitem1</string>
+    <string name="subitem2">subitem2</string>
+    <string name="search">Such Deinen Song</string>
+
+    <string name="playername">Music Player</string>
+    <string name="isPlaying">Song wird abgespielt.</string>
+    <string name="stopped">Song wurde angehalten.</string>
+    <string name="paused">Song wurde pausiert.</string>
+    <string name="reset">Player wurde zur&#252;ckgesetzt.</string>
+    <string name="NowPlaying">Abspielen.</string>
+    <string name="SongList">Songliste</string>
+    <string name="title_activity_playlist">Playliste</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="fernsehturm" translatable="false">fernsehturm</string>
+    <string name="songartist">Song Artist</string>
+    <string name="such_deinen_song_hier">Such Deinen Song hier</string>
+    <string name="brandenburg" translatable="false">brandenburg</string>
+
+    <string name="kuenstler_fragment">K&#252;nstler-Fragment</string>
+    <string name="titel_fragment">Titel-Fragment</string>
+    <string name="album_fragment">Album_Fragment</string>
+    <string name="title_activity">Deine Musiktitel</string>
+    <string name="album_activity">Deine Alben</string>
+    <string name="artist_activity">Deine Künstler</string>
+    <string name="playlists">Playlists</string>
+
+    <string name="permission_granted">Zugangsberechtigung zu Deinem Speicher</string>
+    <string name="permission_granting">Diese Berechtigungsanfrage ist nötig, damit Deine Musik von Deinen Speichern gelesen werden kann.</string>
+    <string name="nein">NÖÖÖ!</string>
+    <string name="permission_denied">Leider kann Deine neue Musik-App nicht von Deinen Speicherkarten lesen…</string>
+    <string name="permission_accepted">Zugang wurde erteilt.</string>
+    <string name="cast_app_id" translatable="false">81512</string>
+    <string name="cast" translatable="false">Cast</string>
+
+    <string name="widget_standard" translatable="false">Music Player Standard Widget</string>
+    <string name="widget_small">Music Player Klein Widget</string>
+    <string name="widget_big">Music Player Groß Widget</string>
+    <string name="tap_to_start">Tippe um zu Starten</string>
+    <string name="songs">Songs</string>
+    <string name="alben">Alben</string>
+    <string name="kuenstler">Künstler</string>
+    <string name="hello_world">Hallo Welt! Hier bin ich.</string>
+    <string name="funkturm">Funkturm</string>
+    <string name="search_activity" translatable="false">Search Activity</string>
+    <string name="shuffle_button">Shuffle-Button</string>
+    <string name="repeat_button">Repeat-Button</string>
+
+
+</resources>

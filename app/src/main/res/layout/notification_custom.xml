@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary_translucent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageViewAlbumArt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_play" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textSongName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:text="@string/song_name"/>
+
+            <TextView
+                android:id="@+id/textAlbumName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#C0C0C0"
+                android:text="@string/rio_reiser"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_notif_backward" />
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/ic_notif_pause" />
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/ic_notif_play"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/ic_notif_forward" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_notif_remove" />
+    </LinearLayout>
+
+</LinearLayout>

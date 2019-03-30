@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widgets_radius_corners"
+    android:id="@+id/linLayout_widget_std"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewAlbumArt_widget_std"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_play"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notif_SongName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:fontFamily=""
+                    android:text="@string/song_name"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <!--This delete button might not be necessary for a widget
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_notif_remove"/>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notif_artist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:fontFamily=""
+                    android:textStyle="bold"
+                    android:text="@string/rio_reiser"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/btnPrevious"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_notif_backward" />
+
+
+                <ImageView
+                    android:id="@+id/btnPlay"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_notif_play"
+                    />
+
+                <ImageView
+                    android:id="@+id/btnNext"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="30dp"
+                   android:layout_gravity="center"
+                    android:background="@drawable/ic_notif_forward"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
