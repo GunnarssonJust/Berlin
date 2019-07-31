@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="5dp">
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                     />
 
 
-                <!--This delete button might not be necessary for a widget
+                <!--This delete button might not be necessary for a widgets
                 <Button
                     android:id="@+id/btnDelete"
                     android:layout_width="28dp"
@@ -55,7 +55,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/notif_artist"
+                    android:id="@+id/widget_small_artist"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"

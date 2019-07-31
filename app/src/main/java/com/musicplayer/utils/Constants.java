@@ -6,17 +6,27 @@ package com.musicplayer.utils;
 public class Constants {
 
     // set of constant strings used to specify the action in the Intent being sent
-    // from the activity/fragment to the receiver
+    // from the activity/fragment to the receiver (as Notification, Bluetooth Device, or Widget)
 
-    public static final String ACTION_SONG = "com.kassettenrekorder.ACTION_SONG";
-    public static final String ACTION_PLAY_PAUSE = "com.kassettenrekorder.ACTION_PAUSE";
-    public static final String ACTION_PLAY = "com.kassettenrekorder.ACTION_PLAY";
-    public static final String ACTION_PAUSE = "com.kassettenrekorder.ACTION_PAUSE";
-    public static final String ACTION_REWIND = "com.kassettenrekorder.ACTION_REWIND";
-    public static final String ACTION_FORWARD = "com.kassettenrekorder.ACTION_FORWARD";
-    public static final String ACTION_NEXT = "com.kassettenrekorder.ACTION_NEXT";
-    public static final String ACTION_PREVIOUS = "com.kassettenrekorder.ACTION_PREVIOUS";
-    public static final String ACTION_STOP = "com.kassettencom.kassettenrekorder.ACTION_STOP";
-    public static final String ACTION_REPOSITION = "com.kassettenrekorder.ACTION_REPOSITION";
-    public static final String ACTION_COMPLETED = "com.kassettenrekorder.ACTION_COMPLETED";
+    public static final String ACTION_SONG = "com.musicplayer.ACTION_SONG";
+    public static final String ACTION_PLAY_PAUSE = "com.musicplayer.ACTION_PAUSE";
+    public static final String ACTION_PLAY = "com.musicplayer.ACTION_PLAY";
+    public static final String ACTION_PAUSE = "com.musicplayer.ACTION_PAUSE";
+    public static final String ACTION_REWIND = "com.musicplayer.ACTION_REWIND";
+    public static final String ACTION_FORWARD = "com.musicplayer.ACTION_FORWARD";
+    public static final String ACTION_NEXT = "com.musicplayer.ACTION_NEXT";
+    public static final String ACTION_PREVIOUS = "com.musicplayer.ACTION_PREVIOUS";
+    public static final String ACTION_STOP = "com.musicplayer.ACTION_STOP";
+    public static final String ACTION_REPOSITION = "com.musicplayer.ACTION_REPOSITION";
+    public static final String ACTION_COMPLETED = "com.musicplayer.ACTION_COMPLETED";
+    public static final String ACTION_RESET = "com.musicplayer.ACTION_RESET";
+    public static final String ACTION_REPEAT = "com.musicplayer.ACTION_REPEAT";
+    public static final String ACTION_SHUFFLE = "com.musicplayer.ACTION_SHUFFLE";
+    public static final String NAVIGATE_NOWPLAYING = "com.musicplayer.NAVIGATE_NOWPLAYING";
+    public static final String META_CHANGED = "com.musicplayer.metachanged";
+    public static final String POSITION_CHANGED = "com.musicplayer.positionchanged";
+    public static final String QUEUE_CHANGED = "com.musicplayer.queuechanged";
+    public static final String PLAYSTATE_CHANGED = "com.musicplayer.playstatechanged";
+
+    public static final String SKYPE_CONNECTED ="com.musicplayer.SKYPE_CONNECTED" ;
 }

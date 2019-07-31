@@ -4,13 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
@@ -73,14 +70,13 @@ public class FragmentAlbum extends ListFragment implements LoaderManager.LoaderC
 
         String artist = MediaStore.Audio.Media.ARTIST;
         //return the information about the selected song to MusicActivity
-        Intent in = new Intent(getActivity(), MusicActivity.class);
+        Intent in = new Intent(getContext(), MusicActivity.class);
         in.putExtra("songIndex", id);
         in.putExtra("artist",artist);
 
 
         //return the same return code 100 that MusicActivity used to start this activity.
         getActivity().setResult(100,in);
-        startActivity(in);
         getActivity().finish();
 
     }

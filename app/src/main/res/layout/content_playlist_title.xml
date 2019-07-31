@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="10dp"
+    android:gravity="top"
+    android:padding="2dp"
     tools:context=".activities.PlaylistActivity"
     android:background="@drawable/list_selector">
     
@@ -14,15 +14,14 @@
     <ImageView
         android:contentDescription="@string/albumart"
         android:id="@+id/songThumbNail"
-        android:layout_width="40dp"
-        android:layout_height="match_parent"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:maxWidth="16dp"
-        android:maxHeight="16dp"
-        android:scaleType="fitXY"
+        android:maxWidth="14dp"
+        android:maxHeight="14dp"
         android:src="@drawable/ic_purple_note"
         />
 
@@ -34,9 +33,13 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/songThumbNail"
         android:layout_toEndOf="@id/songThumbNail"
-        android:text="@string/song_name"
-        android:padding="3dp"
-        android:textSize="16sp"
+        android:paddingLeft="3dp"
+        android:text="@string/rauch_haus_song"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:gravity="start"
+        android:textSize="14sp"
         />
 
     <TextView
@@ -48,6 +51,8 @@
         android:layout_below="@id/songlist"
         android:text="@string/songartist"
         android:textSize="12sp"
+        android:paddingLeft="3dp"
+        android:textColor="@color/black"
         android:layout_alignStart="@+id/songlist" />
 
     <!--<TextView

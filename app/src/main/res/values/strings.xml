@@ -1,11 +1,15 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Music Player</string>
+
     <string name="preview">Preview</string>
     <string name="rewind">Rewind</string>
     <string name="pause">Pause</string>
     <string name="play">Play</string>
     <string name="forward">Forward</string>
     <string name="next">Next</string>
+    <string name="repeat">Repeat</string>
+    <string name="shuffle">Shuffle</string>
+
     <string name="song_name">Song name</string>
     <string name="songImage">Album Image</string>
     <string name="playlist">Playlists</string>
@@ -13,8 +17,7 @@
     <string name="start">start</string>
     <string name="alles_klar">alles klar</string>
     <string name="albumart">Album Art</string>
-    <string name="repeat">Repeat</string>
-    <string name="shuffle">Shuffle</string>
+
     <string name="rio_reiser" translatable="false">Rio Reiser</string>
     <string name="rauch_haus_song" translatable="false">Rauch-Haus-Song</string>
     <string name="schliessen">Schlie&#223;en</string>
@@ -41,29 +44,42 @@
     <string name="album_fragment">Album_Fragment</string>
     <string name="title_activity">Deine Musiktitel</string>
     <string name="album_activity">Deine Alben</string>
-    <string name="artist_activity">Deine Künstler</string>
+    <string name="artist_activity">Deine K&#252;nstler</string>
     <string name="playlists">Playlists</string>
 
     <string name="permission_granted">Zugangsberechtigung zu Deinem Speicher</string>
-    <string name="permission_granting">Diese Berechtigungsanfrage ist nötig, damit Deine Musik von Deinen Speichern gelesen werden kann.</string>
-    <string name="nein">NÖÖÖ!</string>
+    <string name="permission_granting">Diese Berechtigungsanfrage ist n&#246;tig, damit Deine Musik von Deinen Speichern gelesen werden kann.</string>
+    <string name="nein">N&#214;&#214;&#214;!</string>
     <string name="permission_denied">Leider kann Deine neue Musik-App nicht von Deinen Speicherkarten lesen…</string>
     <string name="permission_accepted">Zugang wurde erteilt.</string>
     <string name="cast_app_id" translatable="false">81512</string>
     <string name="cast" translatable="false">Cast</string>
 
-    <string name="widget_standard" translatable="false">Music Player Standard Widget</string>
-    <string name="widget_small">Music Player Klein Widget</string>
-    <string name="widget_big">Music Player Groß Widget</string>
+    <string name="widget_standard" translatable="false">MP Standard Widget</string>
+    <string name="widget_small">MP Widget Klein</string>
+    <string name="widget_big">MP Widget Groß</string>
     <string name="tap_to_start">Tippe um zu Starten</string>
     <string name="songs">Songs</string>
     <string name="alben">Alben</string>
-    <string name="kuenstler">Künstler</string>
+    <string name="kuenstler">K&#252;nstler</string>
     <string name="hello_world">Hallo Welt! Hier bin ich.</string>
     <string name="funkturm">Funkturm</string>
     <string name="search_activity" translatable="false">Search Activity</string>
-    <string name="shuffle_button">Shuffle-Button</string>
-    <string name="repeat_button">Repeat-Button</string>
+    <string name="shuffle_button" translatable="false">Shuffle-Button</string>
+    <string name="repeat_button" translatable="false">Repeat-Button</string>
+
+    <string name="combine_two_strings" translatable="false">%1$s | %2$s</string>
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%3$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%2$02d:%3$02d</xliff:g></string>
+
+    <string name="playlist_top_tracks">Meine Lieblingssongs</string>
+    <string name="notification_settings">Notification-Einstellungen</string>
+    <string name="playlist_last_added">Zuletzt hinzugefügt</string>
+    <string name="playlist_recently_played">Zuletzt gespielt</string>
+    <string name="na_gut">Na gut.</string>
+    <string name="nöööö">NÖÖÖÖ!</string>
+    <string name="berechtigungsanfrage">Diese Berechtigungsanfrage ist nötig, damit Deine Musik von Deinen Speichern gelesen werden kann.</string>
+    <string name="zugangsberechtigung">Zugriffsberechtigung für Speicherkarten</string>
 
 
 </resources>
